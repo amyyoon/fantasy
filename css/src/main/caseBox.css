@@ -6,35 +6,7 @@ top:0;left:0;
 z-index: 100;}
 
 
-.msg{z-index: 500;
-position: absolute;
-display: block;
-margin-top: 500px;
-padding-left: 60px;
-box-sizing: border-box;
-width: 600px;
-height: 200px;
-color:#000;
-transition-duration: .175s;}
 
-.title{
-font-size: 50px;
-font-weight: bold;
-z-index: 200;}
-
-
-.titlebtn{display: block;
-text-align: center;
-line-height: 50px;
-margin-top: 50px;
-width: 200px;
-height: 50px;
-border-radius: 5px;
-font-size: 17px;
-font-weight: bold;
-box-sizing: border-box;
-border:2px solid #fd0202;
-color:#fd0202;z-index: 200;}
 
 
 
