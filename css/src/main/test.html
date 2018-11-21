@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<style>
+    ul {
+        width: 200px;
+    }
+    
+    li {
+        border:1px solid #000;
+        background: skyblue;
+        margin: 2px 0 0 0;
+    }
+ 
+    li.on {
+        background: hotpink;
+    }            
+</style>
+</head>
+<body>
+ 
+    <ul>
+        <li class="btnAll">전체선택</li>
+        <li class="btn">선택1</li>
+        <li class="btn">선택2</li>
+        <li class="btn">선택3</li>
+        <li class="btn">선택4</li>
+        <li class="btn">선택5</li>
+    </ul>
+        
+    <script src="js/jquery.js"></script>
+    <script>
+ 
+        var size;
+ 
+        $('.btnAll').click(function() {
+ 
+            $(this).toggleClass('on');
+ 
+            if($(this).hasClass('on')) {
+                $('.btn').addClass('on');
+            } else {
+                $('.btn').removeClass('on');
+            }
+        });
+ 
+        $('.btn').click(function() {
+ 
+            $(this).toggleClass('on');
+            size = $('.btn.on').size();
+ 
+            if(size == $('.btn').size()) {
+                $('.btnAll').addClass('on');
+            } else {
+                $('.btnAll').removeClass('on');
+            }
+        });    
+ 
+    </script>
+            
+</body>
+</html>
+
+
+출처: http://mylife365.tistory.com/78 [변화에 적응하기]
