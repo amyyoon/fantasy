@@ -162,7 +162,6 @@ z-index: 200;}
 .titlebtn{display: block;
 text-align: center;
 line-height: 50px;
-margin-top: 50px;
 width: 200px;
 height: 50px;
 border-radius: 5px;
@@ -179,12 +178,14 @@ color:#fd0202;z-index: 200;}
 .msg{width: 600px;
 height: 400px;
 margin-top: 500px;}
+.titlebtn{margin-top: 50px;}
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
 .title{font-size: 40px;}
 .msg{width: 400px;
 height: 200px;
 margin-top: 450px;}
+.titlebtn{margin-top: 50px;}
 }
 
 @media screen and (min-width: 300px) and (max-width: 767px) {
@@ -192,7 +193,8 @@ margin-top: 450px;}
 .msg{width: 300px;
 height: 200px;
 /*padding-top: 200px;*/
-margin-top: 400px;}
+margin-top: 380px;}
+.titlebtn{margin-top: 10px;}
 }
 
 
