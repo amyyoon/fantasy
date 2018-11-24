@@ -88,7 +88,7 @@ z-index: 900;
 position: fixed;
 top:0 ;left:20px;
 left:100%;
-width: 300px;height: 100%;
+height: 100%;
 border-left:1px solid #e2e2e2;
 background-color: #fff;
 backface-visibility: hidden;
@@ -174,6 +174,7 @@ color:#fd0202;z-index: 200;}
 height: 400px;
 margin-top: 500px;}
 .titlebtn{margin-top: 50px;}
+.menu{width: 300px;}
 .menu_primary_item{font-size: 26px;}
 .menu_secondary{font-size: 17px;}
 .menu_offices{padding-top: 20px;
@@ -190,6 +191,7 @@ padding:30px;}
 height: 200px;
 margin-top: 300px;}
 .titlebtn{margin-top: 50px;}
+.menu{width: 300px;}
 .menu_primary_item{font-size: 26px;}
 .menu_secondary{font-size: 17px;}
 .menu_offices{padding-top: 20px;
@@ -207,6 +209,7 @@ height: 200px;
 /*padding-top: 200px;*/
 margin-top: 380px;}
 .titlebtn{margin-top: 10px;}
+.menu{width: 100%;}
 .menu_primary_item{font-size: 20px;}
 .menu_secondary{font-size: 15px;}
 .menu_offices{padding-top: 10px;}
