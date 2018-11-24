@@ -22,6 +22,84 @@
 	 	$('.titlebtn').css({'backgroundColor':'transparent', 'color':'#fd0202'})
 	 })
 
+//clock-second
+
+function Clock_move(s,m,h){
+var sec = $('.sec');
+var sec_deg = s*6; 
+var min = $('.min');
+var min_deg =m*6;
+var hour = $('.hour');
+var hour_deg =h*360/12;
+sec.css({'transform':'rotate('+ sec_deg +'deg)'});
+min.css({'transform':'rotate('+ min_deg +'deg)'});
+hour.css({'transform':'rotate('+ hour_deg +'deg)'});
+setInterval(function(){
+  sec_deg += 360/60; 
+  sec.css({'transform':'rotate('+ sec_deg +'deg)'});
+  console.log(sec_deg);
+  if(sec_deg == 360){
+    sec_deg = 0;
+    min_deg += 360/60;
+    console.log(min_deg);
+    min.css({'transform':'rotate('+ min_deg +'deg)'});
+    if(min_deg ==360){
+    min_deg =0;
+    hour_deg += 360/12;
+    console.log(hour_deg);
+    hour.css({'transform':'rotate('+ hour_deg +'deg)'});
+    }
+  }
+ },1000);
+}
+
+var sanDate = new Date();
+var sanS = sanDate.getSeconds();
+var sanM = sanDate.getMinutes();
+var sanH = sanDate.getHours();
+Clock_move(sanS,sanM,sanH);
+/*
+var sec = $('.sec');
+var sec_deg = 0; 
+var min = $('.min');
+var min_deg =0;
+var hour = $('.hour');
+var hour_deg =0;
+
+var clock =setInterval(function(){
+  sec_deg += 360/60; 
+  sec.css({'transform':'rotate('+ sec_deg +'deg)'});
+  console.log(sec_deg);
+  if(sec_deg == 360){
+    sec_deg = 0;
+    min_deg += 360/60;
+    console.log(min_deg);
+    min.css({'transform':'rotate('+ min_deg +'deg)'});
+    if(min_deg ==360){
+    min_deg =0;
+    hour_deg += 360/12;
+    console.log(hour_deg);
+    hour.css({'transform':'rotate('+ hour_deg +'deg)'});
+    }
+  }
+ },1000);
+  */
+
+
+/*
+var counter = 0;
+var i = setInterval(function(){
+    $('.sec').css({'transform':'rotate(1deg)'})
+    counter++;
+    if(counter === 360) {
+        clearInterval(i);
+    }
+}, 200);
+*/
+
+
+
+
 //clock
 
 /*$.fn.clock = function() {
@@ -81,7 +159,7 @@
   });
 }; */
 
-function clock(){
+/*function clock(){
     //calculate angle
     var d, h, m, s;
     d = new Date;
@@ -132,6 +210,6 @@ function setText(id,val){
     document.getElementById(id).innerHTML = val;
 };
 
-window.onload=clock;
+window.onload=clock; */
 
 })(jQuery);
