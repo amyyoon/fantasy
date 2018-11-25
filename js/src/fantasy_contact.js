@@ -26,7 +26,7 @@
 
 
 //SanFrancisco Clock
-});
+
 
 function Clock_move(prefix){
   // 접두어에 따라 시작값만 바꿈
@@ -76,3 +76,5 @@ function Clock_move(prefix){
 
 Clock_move('san'); // 샌프란시스코 시계 
 Clock_move('new'); // 뉴욕시계
+
+})(jQuery);
