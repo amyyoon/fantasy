@@ -13,7 +13,7 @@
 
 	
 	 $('.msg').on('mouseenter',function(){
-	 	$('.title').css({'color':'#d122d0'});
+	 	$('.title').css({'color':'#fd0202'});
 	 	$('.titlebtn').css({'backgroundColor':'#fd0202', 'color':'#fff'})
 	 })
 
